@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import com.example.heartratelimitsdemo.ui.theme.HeartRateLimitsDemoTheme
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.res.stringResource
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,8 +46,10 @@ class MainActivity : ComponentActivity() {
 fun HeartRateLimits(modifier: Modifier = Modifier) {
     var ageInput by remember { mutableStateOf("") } // State variable for age
     val age = ageInput.toIntOrNull() ?: 0 // Age as int
-    val upper = (220 - age) * 0.85f // Upper limit
-    val lower = (220 - age) * 0.65f // Lower limit
+    val upper = if (age >0) (220 - age) * 0.85f else 0f // Upper limit
+    val lower = if (age > 0) (220 - age) * 0.65f else 0f // Lower limit
+    val upperFormatted = String.format("%.2f",upper)
+    val lowerFormatted = String.format("%.2f",lower)
     Column (
         modifier = modifier.padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp)
@@ -54,13 +57,13 @@ fun HeartRateLimits(modifier: Modifier = Modifier) {
         TextField(
             value = ageInput,
             onValueChange = {ageInput = it},
-            label = {Text(text = "Age")},
+            label = {Text(text = stringResource(R.string.age))},
             singleLine = true,
-            keyboardOptions =
-                KeyboardOptions(keyboardType = KeyboardType.Number)
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+            modifier = Modifier.fillMaxWidth()
         )
         Text(
-            text = "Your heart rate limits are $lower - $upper”,
+            text = "Your heart rate limit are $lowerFormatted - $upperFormatted, lowerFormatted,upperFormatted",
             modifier = modifier
         )
     }
