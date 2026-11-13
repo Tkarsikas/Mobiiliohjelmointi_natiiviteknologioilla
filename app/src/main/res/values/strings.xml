@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bmi</string>
+    <string name="body_mass_index">Body mass index</string>
+    <string name="body_mass_index_is">Body mass index is %1$s</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="height">Height (m)</string>
+</resources>
