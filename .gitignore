@@ -1,0 +1,42 @@
+# Gradle
+.gradle/
+**/.gradle/
+build/
+**/build/
+gradle-app.setting
+
+# Kotlin
+.kotlin/
+**/.kotlin/
+*.class
+
+# Android Studio / IntelliJ IDEA
+.idea/
+**/.idea/
+*.iml
+.DS_Store
+/captures
+**/captures
+.externalNativeBuild
+**/.externalNativeBuild
+.cxx/
+**/.cxx/
+
+# Machine-local configuration
+local.properties
+**/local.properties
+
+# Generated Android artifacts
+*.apk
+*.ap_
+*.aab
+*.dex
+
+# Signing secrets
+*.jks
+*.keystore
+
+# Editors and operating systems
+.vscode/
+**/.vscode/
+Thumbs.db
