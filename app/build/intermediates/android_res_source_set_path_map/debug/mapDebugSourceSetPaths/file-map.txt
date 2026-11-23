@@ -1,0 +1,8 @@
+com.example.bmidemo.app-pngs-0 C:\GitRepositories\Mobiiliohjelmointi_natiiviteknologioilla\app\build\generated\res\pngs\debug
+com.example.bmidemo.app-updated_navigation_xml-1 C:\GitRepositories\Mobiiliohjelmointi_natiiviteknologioilla\app\build\generated\updated_navigation_xml\debug
+com.example.bmidemo.app-packageDebugResources-2 C:\GitRepositories\Mobiiliohjelmointi_natiiviteknologioilla\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.bmidemo.app-packageDebugResources-3 C:\GitRepositories\Mobiiliohjelmointi_natiiviteknologioilla\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.bmidemo.app-debug-4 C:\GitRepositories\Mobiiliohjelmointi_natiiviteknologioilla\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.bmidemo.app-debug-5 C:\GitRepositories\Mobiiliohjelmointi_natiiviteknologioilla\app\src\debug\res
+com.example.bmidemo.app-main-6 C:\GitRepositories\Mobiiliohjelmointi_natiiviteknologioilla\app\src\main\res
+gradleHome-0 C:\Users\INTEL\.gradle
